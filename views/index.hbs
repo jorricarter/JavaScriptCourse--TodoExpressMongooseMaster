@@ -20,9 +20,9 @@
 {{#each tasks}}
   <p>{{@index}}: <a href="task/{{this._id}}">{{this.text}}</a></p>
 
-  <form action="/done" method="POST" class="done_form">
+  <form action="/done" method="POST" class="delete_form">
     <input type="hidden" name="_id" value="{{this._id}}">
-    <input class="done_button" type="submit" name="done" value="Done">
+    <input class="done_button" type="submit" name="done" value="Delete">
   </form>
 
   <form action="/delete" method="POST" class="delete_form">
