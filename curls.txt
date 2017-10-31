@@ -1,0 +1,20 @@
+Post to /done with a valid ID that is not in the database
+
+curl -v -X POST --data "_id=123456123456123456123456" http://127.0.0.1:3000/done
+
+Post to /done with a valid ID
+
+curl -v -X POST --data "_id=123456123456123456123456" http://127.0.0.1:3000/done
+
+Post to /add an example new task
+
+curl -v -X POST --data "text=brush the cat" http://127.0.0.1:3000/add
+
+
+Post to /delete with a valid ID that is not in the database
+
+curl -v -X POST --data "_id=123456123456123456123456" http://127.0.0.1:3000/delete
+
+Post to /delete with an invalid ID
+
+curl -v -X POST --data "_id=pizza" http://127.0.0.1:3000/delete
